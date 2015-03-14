@@ -1,0 +1,240 @@
+/**
+ * custom.css
+ * 
+ * Global CSS for www.homebrew-launchpad.com
+ */
+
+/* columns of same height styles */
+.container-xs-height {
+    display:table;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.row-xs-height {
+    display:table-row;
+}
+
+.col-xs-height {
+    display:table-cell;
+    float:none;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+/* vertical alignment styles */
+.col-top {
+    vertical-align:top;
+}
+
+.col-middle {
+    vertical-align:middle;
+}
+
+.col-bottom {
+    vertical-align:bottom;
+}
+
+a, a:hover {
+    color:#5B0D01;
+}
+
+body {
+    background-color: #DA7E01;
+    background-image:url('/img/drops.png');
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#top {
+    text-align: center;
+    padding-bottom:30px;
+}
+
+#bottom {
+    text-align: center;
+    padding-top: 100px;
+}
+
+#submit {
+    visibility:hidden;
+}
+
+/* container appearance */
+.page {
+    background-image:url('/img/bubbles.png');
+    background-color: #FFFFFF;
+    box-shadow: 0 0 20px 3px;
+}
+
+.input-group {
+    background-color:#FDD978;
+    border-radius:4px;
+    border:1px solid #FCC143;
+}
+
+.input-group-addon {
+    padding:6px;
+    font-size:14px;
+    font-weight:normal;
+    line-height:1;
+    color:#963500;/*color:#555;/*color of text*/
+    text-align:center;
+    background-color:#FDD978;/*background-color:#eee;*/
+    border:none; /*border:1px solid #ccc;*/
+    border-radius:4px
+}
+
+.form-control {
+    border:none;
+    background-color:#FFF7E4;
+}
+
+.lg-select {
+    font-size: 18px;
+    height: 46px;
+    line-height: 1.33;
+    padding: 10px 16px;
+    border:1px solid #FCC143;
+    margin-bottom: 0;
+    display:table-cell;
+}
+
+.nav-pills {
+    font-size: large;
+    display: inline-block;
+}
+
+.inactive {
+    color:gray;
+}
+
+.state {
+    padding:0;
+    visibility:hidden;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color:#FDD978;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus,
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    color:#5B0D01;
+    background-color:#FDD978;
+}
+
+.dropdown-menu > li > a {
+    font-size: large;
+    color:#5B0D01;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-image: linear-gradient(to bottom, #fee799 0px, #fdd978 100%);
+    color:#5B0D01;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, 
+.table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #fef3cc;
+}
+
+.panel-default > .panel-heading {
+    background-image: linear-gradient(to bottom, white 0px, #fee799 100%);
+}
+
+.btn-custom {
+    background-color: #FDD978;
+    border-color: #FCC143;
+    color:#963500;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+    background-color: #fdd25f;
+    border-color: #fccb46;
+    color:#963500;
+}
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+    background-color: #FDD978;
+    border-color: #FDD978;
+    color:#963500;
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"],
+.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    margin-top:2px;
+}
+
+@media (min-width:768px) {
+    .container-sm-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-sm-height {
+        display:table-row;
+    }
+    .col-sm-height {
+        display:table-cell;
+        float:none;
+    }
+}
+@media (min-width:992px) {
+    .container-md-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-md-height {
+        display:table-row;
+    }
+    .col-md-height {
+        display:table-cell;
+        float:none;
+    }
+}
+@media (min-width:1200px) {
+    .container-lg-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-lg-height {
+        display:table-row;
+    }
+    .col-lg-height {
+        display:table-cell;
+        float:none;
+    }
+}
+
+@media print {
+    a[href]:after {
+        content: "";
+    }
+}
+
