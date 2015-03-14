@@ -38,6 +38,11 @@
                 "amount" => NULL
             ];
         }
+        // give the recipe a title if one wasn't entered
+        if ( !isset( $calc_input["recipe"]["name"] ) ) {
+            $calc_input["recipe"]["name"] = "No Name Beer";
+        }
+        
         // look up yeast name
         $row = query("SELECT name FROM Yeast WHERE number = ?", $calc_input["yeast"]["number"]);
         $yeast_name = $row[0]["name"];

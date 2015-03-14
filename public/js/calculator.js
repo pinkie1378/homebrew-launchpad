@@ -61,9 +61,11 @@ $( document ).ready( function() {
         restrictDecimal( event.currentTarget.id, event, event.charCode );
     });
     $( "#calculator" ).on( "keyup", "#volTotal", function() {
-        setVolumes( false );
-        adjustAmounts();
-        displayCALC_OUTPUT();
+        setTimeout( function() {
+            setVolumes( false );
+            adjustAmounts();
+            displayCALC_OUTPUT();
+        }, 250 );
     });
     $( "#calculator" ).on( "change", "#volTotal", function() {
         setVolumes( true );
