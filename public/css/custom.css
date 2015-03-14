@@ -151,7 +151,7 @@ img {
 }
 
 .panel-default > .panel-heading {
-    background-image: linear-gradient(to bottom, white 0px, #fee799 100%);
+    background-image: linear-gradient(to bottom, #FEFAEA 0px, #FDC953 100%);
 }
 
 .btn-custom {
