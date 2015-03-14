@@ -1,0 +1,27 @@
+This website requires a file:
+
+    includes/constants.php
+
+in order to run.  It should look like this:
+
+<?php
+
+    /**
+     * constants.php
+     *
+     * homebrew.launchpad.com global constants.
+     */
+
+    // your database's name
+    define("DATABASE", "[insert name here]");
+
+    // your database's password
+    define("PASSWORD", "[insert password here]");
+
+    // your database's server
+    define("SERVER", "localhost");
+
+    // your database's username
+    define("USERNAME", "[insert username here]");
+
+?>
