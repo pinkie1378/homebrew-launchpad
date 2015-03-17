@@ -173,4 +173,27 @@
         }
         return $retval;
     }
+    
+    /**
+     * Takes an array of strings and outputs them in a comma separated list,
+     * with each individual string bolded.
+     */
+    function formatted_string_list( $str = [] ) {
+        $retval = "";
+        $length = count($str);
+        if ( $length == 1 ) {
+            $retval .= "<strong>$str[0]</strong>";
+        }
+        else if ( $length == 2 ) {
+            $retval .= "<strong>$str[0]</strong> and <strong>$str[1]</strong>";
+        }
+        else {
+            $last_str = array_pop( $str );
+            foreach ( $str as $string ) {
+                $retval .= "<strong>$string</strong>, ";
+            }
+            $retval .= "and <strong>$last_str</strong>";
+        }
+        return $retval;
+    }
 ?>
