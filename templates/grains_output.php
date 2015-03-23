@@ -6,7 +6,7 @@
 
 <br />
 
-<h4>Kilned Malts:</h4>
+<h4>Munich Malts:</h4>
 
 <p>These need to be mashed to convert the starches to sugar, so simple steeping doesn't add any sweetness to the wort.  However, they do add color and flavor.</p>
 
@@ -26,22 +26,22 @@
     <tbody>
         
         <?php 
-	    foreach ($kilned_grains as $kilned_grain):
+            foreach ($munich_grains as $munich_grain):
 
-            $kilned_grain["fgdb"] *= 100;
-            $kilned_grain["mc"] *= 100;
+            $munich_grain["fgdb"] *= 100;
+            $munich_grain["mc"] *= 100;
             
             print("<tr>");
-            print("<td><a href='{$kilned_grain["link"]}' target='_blank'>{$kilned_grain["name"]}</a></td>");
-            print("<td>{$kilned_grain["lovibond"]}</td>");
-            print("<td>{$kilned_grain["fgdb"]}%</td>");
-            print("<td>{$kilned_grain["mc"]}%</td>");
-            print("<td>{$kilned_grain["color"]}</td>");
-            print("<td>{$kilned_grain["flavor"]}</td>");
+            print("<td><a href='{$munich_grain["link"]}' target='_blank'>{$munich_grain["name"]}</a></td>");
+            print("<td>{$munich_grain["lovibond"]}</td>");
+            print("<td>{$munich_grain["fgdb"]}%</td>");
+            print("<td>{$munich_grain["mc"]}%</td>");
+            print("<td>{$munich_grain["color"]}</td>");
+            print("<td>{$munich_grain["flavor"]}</td>");
             print("</tr>");
 
-	    endforeach 
-	?>
+            endforeach 
+        ?>
     </tbody>
     
 </table>
@@ -70,11 +70,11 @@
     <tbody>
         
         <?php 
-	    foreach ($caramel_grains as $caramel_grain):
-			
-			$caramel_grain["fgdb"] *= 100;
+            foreach ($caramel_grains as $caramel_grain):
+
+            $caramel_grain["fgdb"] *= 100;
             $caramel_grain["mc"] *= 100;
-			
+
             print("<tr>");
             print("<td><a href='{$caramel_grain["link"]}' target='_blank'>{$caramel_grain["name"]}</a></td>");
             print("<td>{$caramel_grain["lovibond"]}</td>");
@@ -84,8 +84,8 @@
             print("<td>{$caramel_grain["flavor"]}</td>");
             print("</tr>");
 
-	    endforeach 
-	?>
+            endforeach 
+        ?>
     </tbody>
     
 </table>
@@ -114,9 +114,9 @@
     <tbody>
         
         <?php 
-	    foreach ($roasted_grains as $roasted_grain):
-	    
-			$roasted_grain["fgdb"] *= 100;
+            foreach ($roasted_grains as $roasted_grain):
+
+            $roasted_grain["fgdb"] *= 100;
             $roasted_grain["mc"] *= 100;
 
             print("<tr>");
@@ -128,8 +128,8 @@
             print("<td>{$roasted_grain["flavor"]}</td>");
             print("</tr>");
 
-	    endforeach 
-	?>
+            endforeach 
+        ?>
     </tbody>
     
 </table>
