@@ -217,8 +217,8 @@ function writeGrain( num ) {
             <div class="input-group"> \
             <span class="input-group-addon">Grain ' + num + '</span> \
                 <label class="radio-inline"> \
-                    <input type="radio" class="grain' + num + '_type" id="grain' + num + '_kilned" name="grain' + num + '_type" value="Kilned"> \
-                    Kilned \
+                    <input type="radio" class="grain' + num + '_type" id="grain' + num + '_munich" name="grain' + num + '_type" value="Munich"> \
+                    Munich \
                 </label> \
                 <label class="radio-inline"> \
                     <input type="radio" class="grain' + num + '_type" id="grain' + num + '_caramel" name="grain' + num + '_type" value="Caramel"> \

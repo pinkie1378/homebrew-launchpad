@@ -9,8 +9,8 @@
             <div class="input-group">
                 <span class="input-group-addon">Grain 1</span>
                 <label class="radio-inline">
-                    <input type="radio" class="grain1_type" id="grain1_kilned" name="grain1_type" value="Kilned">
-                    Kilned
+                    <input type="radio" class="grain1_type" id="grain1_munich" name="grain1_type" value="Munich">
+                    Munich
                 </label>
                 <label class="radio-inline">
                     <input type="radio" class="grain1_type" id="grain1_caramel" name="grain1_type" value="Caramel">
