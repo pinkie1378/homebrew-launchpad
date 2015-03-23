@@ -277,7 +277,7 @@ function initializeExtract( ingredient ) {
 function initializeGrain( ingredient ) {
     var index = CALC_INPUT[ingredient].name;
     switch ( INGREDIENTS.grain[index].type ) {
-        case "Kilned": case "Caramel":
+        case "Munich": case "Caramel":
             CALC_INPUT[ingredient].amount =
             Math.round( (0.5 * (CALC_INPUT.recipe.volTotal / 5)) * 100 ) / 100;
             break;
@@ -434,8 +434,8 @@ function ingredientToForm( ingredient, ingType ) {
             break;
         case "grain":
             // set radio button
-            if ( CALC_INPUT[ingredient].type == "Kilned" ) {
-                $( "#" + ingredient + "_kilned" ).prop( "checked", true );
+            if ( CALC_INPUT[ingredient].type == "Munich" ) {
+                $( "#" + ingredient + "_munich" ).prop( "checked", true );
             }
             else if ( CALC_INPUT[ingredient].type == "Caramel" ) {
                 $( "#" + ingredient + "_caramel" ).prop( "checked", true );
