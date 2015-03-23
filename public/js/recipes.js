@@ -132,8 +132,8 @@ var RECIPES = {
             end:     true
         },
         grain1: {
-            type:   "Kilned",
-            name:   "Munich Malt 10L",
+            type:   "Munich",
+            name:   "Bonlander Munich Malt 10L",
             amount:  1   // pounds
         },
         grain2: {
@@ -184,8 +184,8 @@ var RECIPES = {
             end:    true
         },
         grain1: {
-            type:   "Kilned",
-            name:   "Munich Malt 20L",
+            type:   "Munich",
+            name:   "Aromatic Munich Malt 20L",
             amount:  1.5   // pounds
         },
         grain2: {
