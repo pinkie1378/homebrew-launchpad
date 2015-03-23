@@ -12,13 +12,16 @@
                 $subindex = strtok( "_" );
                 if ( !$subindex ) {
                     if ( $index == "cat" ) {
-                        $bjcp["cat"] = $i;
+                        $bjcp_category = $i;
                     }
                     else if ( $index == "subcat" ) {
-                        $bjcp["subcat"] = $i;
+                        $bjcp_subcat = $i;
                     }
-                    else if ( $index == "og" || $index == "lovibond" || $index == "ibu" ) {
-                        $specs[$index] = $i;
+                    else if ( $index == "og" ) {
+                        $specs[$index] = floatval($i);
+                    }
+                    else if ( $index == "lovibond" || $index == "ibu" ) {
+                        $specs[$index] = intval($i);
                     }
                     else {
                         $calc_input["recipe"][$index] = $i;
@@ -42,7 +45,13 @@
         if ( !isset( $calc_input["recipe"]["name"] ) ) {
             $calc_input["recipe"]["name"] = "No Name Beer";
         }
-        
+        // pass on user selected BJCP category, if one was selected
+        if ( isset( $bjcp_category ) && isset( $bjcp_subcat ) ) {
+            $bjcp = $bjcp_category . $bjcp_subcat;
+        }
+        else {
+            $bjcp = "";
+        }
         // look up yeast name
         $row = query("SELECT name FROM Yeast WHERE number = ?", $calc_input["yeast"]["number"]);
         $yeast_name = $row[0]["name"];

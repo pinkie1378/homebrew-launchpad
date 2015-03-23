@@ -5,10 +5,37 @@
  * Also controls which recipe fields are enabled and disabled, based on inputs.
  */
 
-$( document ).ready( function() {
+/**
+ * Initializes the recipe calculator
+ */
+function init() {
     // initialize recipe selection list and CALC_INPUT
     writeRecipes();
     initGlobals();
+    
+    // display previous BJCP specs, if there were any
+    var prevBJCP = $( "#previous_bjcp" ).text().trim();
+    console.log( prevBJCP );
+    if ( prevBJCP != "" ) {
+        selectBJCP( prevBJCP );
+        console.log( "selected " + prevBJCP );
+    }
+    // populate calculator with previous recipe, if there is one
+    var prevCalcInput = $( "#previous_calc_input" ).text().trim();
+    if ( prevCalcInput != "" ) {
+        CALC_INPUT = JSON.parse( prevCalcInput );
+        // populate form with CALC_INPUT and calculate CALC_OUTPUT
+        CALC_INPUTtoForm();
+        firstSelection( false );
+        renderForm();
+        calculate();
+        displayCALC_OUTPUT();
+    }
+}
+
+$( document ).ready( function() {
+
+    init();
 
     // event handler for radios
     $( "#calculator" ).on( "change", "input:radio", function () {

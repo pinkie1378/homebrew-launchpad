@@ -1,5 +1,29 @@
 <div id="middle"> 
 
+    <!--Display recipe specs from recipe_display.php page-->
+    <p id="previous_calc_input" hidden> 
+    
+    <?php
+    
+        if ( isset($calc_input_json) ) {
+            echo $calc_input_json;
+        }
+        
+    ?> 
+    
+    </p>
+    
+    <p id="previous_bjcp" hidden> 
+    
+    <?php
+    
+        if ( isset($bjcp_json) ) {
+            echo $bjcp_json;
+        }
+        
+    ?> 
+    
+    </p>
     <!--Recipe calculator form-->
 
     <form id="recipe" action="recipe_display.php" method="get">
