@@ -6,7 +6,7 @@
     // get munich specialty grains
     $munich_grains = query("SELECT * FROM Specialty_Grains WHERE type = ? ORDER BY lovibond", "Munich");
     
-    if ($kilned_grains === false) {
+    if ($munich_grains === false) {
             apologize("Unable to retrieve munich specialty grains.");
     }
     // get caramel specialty grains
