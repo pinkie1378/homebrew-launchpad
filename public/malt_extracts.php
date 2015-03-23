@@ -4,7 +4,7 @@
 	require("../includes/config.php");
 	
 	// get liquid malt extract data
-	$liquidmes = query("SELECT * FROM Malt_Extracts WHERE type = ?", "Liquid");
+	$liquidmes = query("SELECT * FROM Malt_Extracts WHERE type = ? ORDER BY lovibond", "Liquid");
 	
 	if ($liquidmes === false)
 	{
@@ -12,7 +12,7 @@
 	}
 	
 	// get dry malt extract data
-	$drymes = query("SELECT * FROM Malt_Extracts WHERE type = ?", "Powder");
+	$drymes = query("SELECT * FROM Malt_Extracts WHERE type = ? ORDER BY lovibond", "Powder");
 	
 	if ($drymes === false)
 	{

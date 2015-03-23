@@ -4,7 +4,7 @@
 	require("../includes/config.php");
 	
 	// get bittering hops varieties
-	$bitter_hops = query("SELECT * FROM Hops WHERE type = ?", "Bittering");
+	$bitter_hops = query("SELECT * FROM Hops WHERE type = ? ORDER BY name", "Bittering");
 	
 	if ($bitter_hops === false)
 	{
@@ -12,7 +12,7 @@
 	}
 	
 	// get dual purpose hops varieties
-	$dual_hops = query("SELECT * FROM Hops WHERE type = ?", "Dual");
+	$dual_hops = query("SELECT * FROM Hops WHERE type = ? ORDER BY name", "Dual");
 	
 	if ($dual_hops === false)
 	{
@@ -20,7 +20,7 @@
 	}
 	
 	// get aroma hops varieties
-	$aroma_hops = query("SELECT * FROM Hops WHERE type = ?", "Aroma");
+	$aroma_hops = query("SELECT * FROM Hops WHERE type = ? ORDER BY name", "Aroma");
 	
 	if ($aroma_hops === false)
 	{
