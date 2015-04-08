@@ -62,7 +62,7 @@
                         print("<th style='padding-right:20px'>% Alcohol</th>");
                         print("</tr></thead><tbody><tr>");
                         print("<td>{$style['ibu_min']} - {$style['ibu_max']}</td>");
-                        print("<td>{$style['srm_min']} - {$style['srm_max']}</td>");
+                        print("<td>&nbsp;{$style['srm_min']} - {$style['srm_max']}</td>");
                         print("<td>{$style['og_min']} - {$style['og_max']}</td>");
                         print("<td>{$style['fg_min']} - {$style['fg_max']}</td>");
                         print("<td>{$style['abv_min']} - {$style['abv_max']}</td>");
