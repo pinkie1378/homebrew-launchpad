@@ -1,16 +1,12 @@
-This website requires a file:
+This website is hosted at http://www.homebrew-launchpad.com
+
+There is one additional file not in this repository required:
 
     includes/constants.php
 
-in order to run.  It should look like this:
+in order to run.  It should include the following:
 
 <?php
-
-    /**
-     * constants.php
-     *
-     * homebrew.launchpad.com global constants.
-     */
 
     // your database's name
     define("DATABASE", "[insert name here]");
