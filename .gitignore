@@ -1,0 +1,4 @@
+includes/constants.php
+*.txt
+*.jpg
+*.xcf
