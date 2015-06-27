@@ -2,3 +2,4 @@ includes/constants.php
 *.txt
 *.jpg
 *.xcf
+public/phpmyadmin
